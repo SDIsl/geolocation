@@ -182,9 +182,9 @@ odoo.define('web_google_maps.GplaceAutocompleteFields', function (require) {
             this.fillfields = {
                 [this.address_form.street]: ['street_number', 'route'],
                 [this.address_form.street2]: ['administrative_area_level_3', 'administrative_area_level_4', 'administrative_area_level_5'],
-                [this.address_form.city]: ['locality', 'administrative_area_level_2'],
+                [this.address_form.city]: ['locality', 'administrative_area_level_3'],
                 [this.address_form.zip]: 'postal_code',
-                [this.address_form.state_id]: 'administrative_area_level_1',
+                [this.address_form.state_id]: 'administrative_area_level_2',
                 [this.address_form.country_id]: 'country'
             };
         },
@@ -328,9 +328,9 @@ odoo.define('web_google_maps.GplaceAutocompleteFields', function (require) {
                 address: {
                     [this.address_form.street]: ['street_number', 'route'],
                     [this.address_form.street2]: ['administrative_area_level_3', 'administrative_area_level_4', 'administrative_area_level_5'],
-                    [this.address_form.city]: ['locality', 'administrative_area_level_2'],
+                    [this.address_form.city]: ['locality', 'administrative_area_level_3'],
                     [this.address_form.zip]: 'postal_code',
-                    [this.address_form.state_id]: 'administrative_area_level_1',
+                    [this.address_form.state_id]: 'administrative_area_level_2',
                     [this.address_form.country_id]: 'country'
                 }
             };
